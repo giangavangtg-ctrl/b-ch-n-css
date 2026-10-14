@@ -1,0 +1,68 @@
+/* 1. ELEMENT SELECTOR (Bộ chọn phần tử) 
+   Đổi màu nền của toàn bộ trang (body) */
+body {
+    background-color: #f0f4f8; /* Màu nền xanh nhạt */
+    font-family: Arial, sans-serif;
+    padding: 30px;
+}
+
+/* 2. GROUPING SELECTOR (Bộ chọn nhóm) 
+   Nhóm h1 và thẻ p có class .description để căn giữa (text-align) cùng một lúc */
+h1, .description {
+    text-align: center; 
+}
+
+/* (Element Selector) Định dạng riêng thêm cho tiêu đề */
+h1 {
+    color: #2c3e50; 
+}
+
+/* 3. CLASS SELECTOR (Bộ chọn lớp) 
+   Định dạng khối danh sách */
+.hobbies-list {
+    max-width: 300px;
+    margin: 20px auto; /* Căn giữa khối danh sách */
+    padding: 20px 40px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* 4. PSEUDO-CLASS (Lớp giả) 
+   Sử dụng :nth-child để định dạng màu sắc khác nhau cho từng mục li trong danh sách */
+.hobbies-list li:nth-child(1) {
+    color: #e74c3c; /* Mục 1: Màu đỏ */
+    font-weight: bold;
+}
+
+.hobbies-list li:nth-child(2) {
+    color: #27ae60; /* Mục 2: Màu xanh lá */
+    font-weight: bold;
+}
+
+.hobbies-list li:nth-child(3) {
+    color: #2980b9; /* Mục 3: Màu xanh dương */
+    font-weight: bold;
+}
+
+/* 5. ID SELECTOR (Bộ chọn ID) 
+   Định dạng nút bấm */
+#action-btn {
+    display: block;
+    margin: 30px auto; /* Căn giữa nút */
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #8e44ad; /* Nút màu tím */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; /* Đổi con trỏ thành hình bàn tay */
+    transition: background-color 0.3s; /* Hiệu ứng chuyển màu mượt mà */
+}
+
+/* 6. PSEUDO-CLASS (Lớp giả - hover) 
+   Sử dụng hover effect: Đổi màu khi người dùng di chuột qua nút */
+#action-btn:hover {
+    background-color: #9b59b6; /* Nút đổi sang màu tím sáng hơn khi hover */
+}
